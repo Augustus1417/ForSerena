@@ -6,10 +6,21 @@ p{
 img{
     display: block;
     margin: auto;
+    width: 300px;height: 300px;
+
 }
 div{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 500vh;
+}
+body{
+    background-color:rgb(155, 206, 155);
+}
+#enter{
+    background-color: #c0ecc0;
+}
+form{
+    text-align: center; vertical-align: middle;
 }
