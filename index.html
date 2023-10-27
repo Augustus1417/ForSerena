@@ -8,10 +8,21 @@
 </head>
 <body>
     <img src="gift.gif" id = "gift">
-    <form action="index.html" method="get">
-        <input id="textbox" type="text" name="Password" placeholder="Password">
-        <button class="big-button" type="submit">Enter</button>
-    </form>
+    <div id="index"><input id="textbox" type="text" name="Password" placeholder="Password">
+    <button onclick="btnclicked()" class="big-button" type="submit">Enter</button>
+    <script>
+        function btnclicked(){
+            if (document.getElementById("textbox").value == "072823"){
+                window.location.href = "./giftpage.html";
+            }
+            else if (document.getElementById("textbox").value == ""){
+                alert("Password cannot be empty, try again")
+            }
+            else{
+                alert("Wrong! Try again")
+            }
+        }
+    </script>
     <p>Hint: The day we met</p>
 </body>
 </html>
