@@ -18,6 +18,9 @@ p{
     width: 300px;height: 300px;
     margin-top: 15vh;
 }
+#coupon{
+    width: 300px;
+}
 div{
     display: flex;
     justify-content: center;
@@ -67,11 +70,38 @@ button{
     text-transform: uppercase;
     font-family: inherit;
 }
-#giftbutton{
+#giftbutton1{
     font-size: 30px;
     margin: 10px;
     margin-top: 10vh;
-    
+}
+#giftbutton2{
+    font-size: 30px;
+    margin: 10px;
+    margin-top: 10vh;
+}
+#giftbutton3{
+    font-size: 30px;
+    margin: 10px;
+    margin-top: 10vh;
+}
+#exitbtn{
+    font-size: 10px;
+    position: absolute;
+    padding: 10px 20px;
+    border-radius: 2em;
+    border: 2px solid rgb(106,163,137);
+    background: rgb(205,255,232);
+    margin-top: 190px;
+}
+#exitbtn2{
+    font-size: 10px;
+    position: absolute;
+    padding: 10px 20px;
+    border-radius: 2em;
+    border: 2px solid rgb(106,163,137);
+    background: rgb(205,255,232);
+    margin-top: 190px;
 }
 button.big-button{
     padding: 1em 2em;
@@ -119,5 +149,40 @@ button.big-button:active::before{
     left: 0;
     width: 100%;
     height: 100vh;
-
+}
+.popup{
+    border-radius: 2em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(223, 255, 212);
+    width: 350px;
+    height: 250px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.1),
+    0 0 0 1000px rgba(92, 86, 86, 0.667);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.popup.active{
+    visibility: visible;
+}
+.popup1{
+    border-radius: 2em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(223, 255, 212);
+    width: 350px;
+    height: 250px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.1),
+    0 0 0 1000px rgba(92, 86, 86, 0.667);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.popup1.popup.active{
+    visibility: visible;
 }
