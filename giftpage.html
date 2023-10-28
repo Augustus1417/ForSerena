@@ -8,15 +8,20 @@
 </head>
 <body>
     <canvas id="my-canvas"></canvas>
-    <div><button id="giftbutton1" class="big-button">Gift 1</button></div>
-    <div><button id="giftbutton2" class="big-button">Gift 2</button></div>
-    <div><button id="giftbutton3" class="big-button">Gift 3</button></div>
+    <div><button id="giftbutton1" class="big-button">I</button></div>
+    <div><button id="giftbutton2" class="big-button">Love</button></div>
+    <div><button id="giftbutton3" class="big-button">You</button></div>
     <div id="couponpop" class ="popup">
         <img id="coupon" src="coupon.png">
         <button id="exitbtn">close</button>
     </div>
-    <div id="messagepop" class ="popup">
+    <div id="gift2pop" class ="popup">
+        <img id="coupon2" src="coupon2.png">
         <button id="exitbtn2">close</button>
+    </div>
+    <div id="messagepop" class ="popup">
+        <p id = "message"style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" style="color: rgb(128, 225, 147);">Happy 2nd Monthsary Baby! I am forever grateful that you are my girlfriend. I know that I'm not perfect and I make mistakes, but I promise you that I will fix them to make you happy. You are the best thing to ever happen to me and I want to stay with you forever. I love you so much my pretty girl!</p>
+        <button id="exitbtn3">close</button>
     </div>
     <script src="index.min.js"></script>
     <script>
@@ -27,10 +32,13 @@
     <script>
         let btn1 = document.querySelector('#giftbutton1');
         let btn2 = document.querySelector('#giftbutton2');
+        let btn3 = document.querySelector('#giftbutton3');
         let popup = document.querySelector('#couponpop');
-        let popup1 = document.querySelector('#messagepop');
+        let popup1 = document.querySelector('#gift2pop');
+        let popup2 = document.querySelector('#messagepop');
         let close = document.querySelector('#exitbtn');
         let close2 = document.querySelector('#exitbtn2')
+        let close3 = document.querySelector('#exitbtn3')
         btn1.onclick = function(){
             popup.classList.add('active')
         }
@@ -42,6 +50,12 @@
         }
         close2.onclick = function(){
             popup1.classList.remove('active')
+        }
+        btn3.onclick = function(){
+            popup2.classList.add('active')
+        }
+        close3.onclick = function(){
+            popup2.classList.remove('active')
         }
         
     </script>
